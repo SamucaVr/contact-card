@@ -18,7 +18,8 @@ main {
 }
 
 #card {
-    width: 40%;
+    width: 90%;
+    max-width: 500px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -27,6 +28,7 @@ main {
     padding: 15px;
     border: 1px solid #b1b1b1;
     border-radius: 1em;
+    background-color: #fff;
 }
 
 .foto {
@@ -47,7 +49,7 @@ main {
 
 .informacao {
     margin-top: 20px;
-    width: 80%;
+    width: 100%;
 }
 
 .link {
@@ -67,4 +69,17 @@ main {
 
 .informacao-box {
     margin-top: 10px;
+}
+
+/* Media queries para responsividade */
+@media (min-width: 768px) {
+    #card {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #card {
+        width: 40%;
+    }
 }
